@@ -226,11 +226,11 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.png');
+  background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
-  max-height: 700px;
+  max-height: 600px;
   background-attachment: scroll;
-  background-position: bottom left;
+  background-position: left bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -239,15 +239,15 @@ header {
   color: white;
 }
 header .intro-text {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 header .intro-text .intro-lead-in {
-  font-family: "Courgette", "Helvetica Neue", Helvetica, Arial, sans-serif;
-/*  font-style: italic;*/
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 25px;
+  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 header .intro-text .intro-heading {
   font-family: "Lobster", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -258,6 +258,19 @@ header .intro-text .intro-heading {
   margin-bottom: 25px;
 }
 @media (min-width: 768px) {
+	  header {
+	  background-image: url('../img/header-bg.jpg');
+	  background-repeat: no-repeat;
+	  max-height: 600px;
+	  background-attachment: scroll;
+	  background-position: bottom center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  text-align: center;
+	  color: white;
+	}
   header .intro-text {
     padding-top: 150px;
     padding-bottom: 200px;
@@ -279,6 +292,7 @@ header .intro-text .intro-heading {
     line-height: 75px;
 	margin-bottom: 50px;
   }
+
 }
 section {
   padding: 100px 0;
@@ -598,7 +612,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-image: url('../img/map-image.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

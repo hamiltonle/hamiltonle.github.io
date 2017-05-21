@@ -230,7 +230,7 @@ header {
   background-repeat: no-repeat;
   max-height: 600px;
   background-attachment: scroll;
-  background-position: bottom center;
+  background-position: 40% 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

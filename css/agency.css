@@ -225,38 +225,112 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
-header {
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
-  max-height: 600px;
-  background-attachment: scroll;
-  background-position: 40% 60%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  color: white;
+
+@media (min-width: 50px) {
+	header {
+	  background-image: url('../img/header-bg_mobile.jpg');
+	  background-repeat: no-repeat;
+	  max-height: 500px;
+	  background-attachment: scroll;
+	  background-position: left bottom;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  text-align: right;
+	  color: white;
+	}
+
+	header ul li{
+	  text-align: center;
+	  margin-top: -30px;
+	  margin-bottom: -30px;
+	}
+	
+	header a {
+		margin-top: 0px;
+		margin-bottom: -10px;
+	}
+
+	header ul.social-buttons li a {
+	  display: block;
+	  background-color: #222222;
+	  height: 34px;
+	  width: 34px;
+	  border-radius: 100%;
+	  font-size: 18px;
+	  line-height: 32px;
+	  color: white;
+	  outline: none;
+	  -webkit-transition: all 0.3s;
+	  -moz-transition: all 0.3s;
+	  transition: all 0.3s;
+	}
+	
+	header .intro-text {
+	  padding-top: 50px;
+	  padding-bottom: 50px;
+	}
+	header .intro-text .intro-lead-in {
+	  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-style: italic;
+	  font-size: 16px;
+	  line-height: 16px;
+	  margin-bottom: 20px;
+	}
+	header .intro-text .intro-heading {
+	  font-family: "Lobster", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  text-transform: uppercase;
+	  font-weight: 700;
+	  font-size: 50px;
+	  line-height: 50px;
+	  margin-bottom: 25px;
+	}
 }
-header .intro-text {
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+
+@media (min-width: 468px) {
+	header {
+	  background-image: url('../img/header-bg_md.jpg');
+	  background-repeat: no-repeat;
+	  max-height: 800px;
+	  background-attachment: scroll;
+	  background-position: bottom left;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+	  -o-background-size: cover;
+	  text-align: center;
+	  color: white;
+	}
+
+	header ul li{
+	  text-align: center;
+	}
+
+	header .intro-text {
+	  padding-top: 100px;
+	  padding-bottom: 50px;
+	}
+	header .intro-text .intro-lead-in {
+	  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-style: italic;
+	  font-size: 22px;
+	  line-height: 22px;
+	  margin-bottom: 20px;
+	}
+	header .intro-text .intro-heading {
+	  font-family: "Lobster", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  text-transform: uppercase;
+	  font-weight: 700;
+	  font-size: 50px;
+	  line-height: 50px;
+	  margin-bottom: 25px;
+	}
+
 }
-header .intro-text .intro-lead-in {
-  font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-header .intro-text .intro-heading {
-  font-family: "Lobster", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
-  margin-bottom: 25px;
-}
+
+
 @media (min-width: 768px) {
 	  header {
 	  background-image: url('../img/header-bg.jpg');
@@ -294,6 +368,8 @@ header .intro-text .intro-heading {
   }
 
 }
+
+
 section {
   padding: 100px 0;
 }

@@ -13,6 +13,15 @@ body {
 .text-primary {
   color: #fed136;
 }
+
+.hover {
+	opacity: 0.7;
+}
+
+.hover:hover {
+	opacity: 0.9;
+}
+
 p {
   font-size: 14px;
   line-height: 1.75;
@@ -417,11 +426,12 @@ section h3.section-subheading {
   width: 200px;
   height: 190px;
 */
-	}
-	.portfolio-img {
-	height: 170px; 
-	width: 100%;
-	}
+  }
+  .portfolio-img {
+  height: 170px; 
+  width: 100%;
+  }
+
 
 }
 @media (min-width: 992px) {
@@ -523,9 +533,96 @@ section h3.section-subheading {
 #portfolio * {
   z-index: 2;
 }
+
+
+
+#interests .portfolio-item {
+  margin: 0 0 0px;
+  padding: 0px;
+  right: 0;
+}
+#interests .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 100%;
+  max-height: 300px;
+/*	height: 200px;*/
+  margin: 0 3px 0;
+}
+
+#interests .portfolio-item .portfolio-link .img-responsive {
+/*
+  display: block;
+  position: relative;
+	max-width: 100%;
+	max-height: 300px;
+*/
+/*	width: 100px !important;*/
+	
+/*	height: 200px;*/
+/*  margin: 0 3px 0;*/
+}
+
+#interests .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#interests .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#interests .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#interests .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#interests .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#interests .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#interests .portfolio-item .portfolio-caption {
+  max-width: 100%;
+  margin: 0 3px 0;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+  height: 130px;
+
+}
+#interests .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#interests .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#interests * {
+  z-index: 2;
+}
+
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 10px 0;
+  }
+  #interests .portfolio-item {
+  margin: 0 0 10px 0;
   }
 }
 .timeline {
@@ -720,6 +817,7 @@ section#contact {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+	  height: 60vh;
 }
 section#contact .section-heading {
   color: white;

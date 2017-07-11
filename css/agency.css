@@ -412,11 +412,15 @@ section h3.section-subheading {
   .container {
     width: 750px;
   }
-	  #portfolio .portfolio-item .portfolio-link .img-responsive {
+  #portfolio .portfolio-item .portfolio-link .img-responsive {
 /*
-	  width: 200px;
-	  height: 190px;
+  width: 200px;
+  height: 190px;
 */
+	}
+	.portfolio-img {
+	height: 170px; 
+	width: 100%;
 	}
 
 }
@@ -424,11 +428,16 @@ section h3.section-subheading {
   .container {
     width: 970px;
   }
+
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
+		.portfolio-img {
+	height: 200px; 
+	width: 100%;
+	}
 }
 
 

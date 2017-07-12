@@ -15,7 +15,7 @@ body {
 }
 
 .img-max-height {
-	height: 120px;
+	height: 140px;
 }
 
 
@@ -65,7 +65,7 @@ h6 {
   margin: 0 auto;
 }
 .bg-light-gray {
-  background-color: #eeeeee;
+  background-color: rgba(0,0,0,.01);
 }
 .bg-darkest-gray {
   background-color: #222222;
@@ -167,7 +167,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   color: #fed136;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
